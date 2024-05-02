@@ -11,6 +11,7 @@ dependencies:
         - pushd _deps ; git clone https://github.com/PacificBiosciences/pbbam.git
         - pushd _deps ; git clone https://github.com/PacificBiosciences/ConsensusCore.git pbconsensus ; pushd pbconsensus ; git checkout pbconsensus
         - pushd _deps ; git clone https://github.com/PacificBiosciences/seqan.git
+        - sudo pip install "numpy>=1.6.0"
 test:
     pre:
         - mkdir _build
